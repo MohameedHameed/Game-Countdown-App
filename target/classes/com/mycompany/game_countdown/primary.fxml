@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="700" prefWidth="900" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.game_countdown.PrimaryController">
+
+    <children>
+        <ScrollPane fitToWidth="true" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+            <content>
+                <GridPane hgap="20" vgap="20" style="-fx-padding: 20;">
+                    <children>
+
+                        <!-- Game 1 -->
+                        <VBox maxWidth="1.7976931348623157E308" prefHeight="350" spacing="10" style="-fx-background-color: #2a2a2a; -fx-background-radius: 10;">
+                            <children>
+                                <HBox prefHeight="40.0">
+                                    <children>
+                                        <Label fx:id="lblGameTitle1" style="-fx-font-weight: bold;" text="Game Title 1" textFill="white">
+                                            <HBox.margin><Insets left="70.0" /></HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <TextArea fx:id="txtdescribationgame1" prefHeight="100.0" text="Description of the game..." wrapText="true" />
+                                <ImageView fx:id="imageviewgame1" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                <Button fx:id="btn_Details1" id="btn1" onAction="#onclickbtn_Details" prefWidth="150.0" text="Details" />
+                                <Label fx:id="timeoutgame1" style="-fx-font-family: Consolas;" text="Release in: 12d 5h" textFill="#00ff88" />
+                            </children>
+                        </VBox>
+
+                        <!-- Game 2 -->
+                        <VBox maxWidth="1.7976931348623157E308" prefHeight="350" spacing="10" style="-fx-background-color: #2a2a2a; -fx-background-radius: 10;" GridPane.columnIndex="1">
+                            <children>
+                                <HBox prefHeight="40.0">
+                                    <children>
+                                        <Label fx:id="lblGameTitle2" style="-fx-font-weight: bold;" text="Game Title 2" textFill="white">
+                                            <HBox.margin><Insets left="70.0" /></HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <TextArea fx:id="txtdescribationgame2" prefHeight="100.0" text="Another game description..." wrapText="true" />
+                                <ImageView fx:id="imageviewgame2" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                <Button fx:id="btn_Details2" id="btn2" onAction="#onclickbtn_Details" prefWidth="150.0" text="Details" />
+                                <Label fx:id="timeoutgame2" style="-fx-font-family: Consolas;" text="Release in: 3d 12h" textFill="#00ff88" />
+                            </children>
+                        </VBox>
+
+                        <!-- Game 3 -->
+                        <VBox maxWidth="1.7976931348623157E308" prefHeight="350" spacing="10" style="-fx-background-color: #2a2a2a; -fx-background-radius: 10;" GridPane.columnIndex="2">
+                            <children>
+                                <HBox prefHeight="40.0">
+                                    <children>
+                                        <Label fx:id="lblGameTitle3" style="-fx-font-weight: bold;" text="Game Title 3" textFill="white">
+                                            <HBox.margin><Insets left="70.0" /></HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <TextArea fx:id="txtdescribationgame3" prefHeight="100.0" text="Another game description..." wrapText="true" />
+                                <ImageView fx:id="imageviewgame3" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                <Button fx:id="btn_Details3" id="btn3" onAction="#onclickbtn_Details" prefWidth="150.0" text="Details" />
+                                <Label fx:id="timeoutgame3" style="-fx-font-family: Consolas;" text="Release in: 7d 22h" textFill="#00ff88" />
+                            </children>
+                        </VBox>
+
+                        <!-- Game 4 -->
+                        <VBox maxWidth="1.7976931348623157E308" prefHeight="350" spacing="10" GridPane.rowIndex="1" style="-fx-background-color: #2a2a2a; -fx-background-radius: 10;">
+                            <children>
+                                <HBox prefHeight="40.0">
+                                    <children>
+                                        <Label fx:id="lblGameTitle4" style="-fx-font-weight: bold;" text="Game Title 4" textFill="white">
+                                            <HBox.margin><Insets left="70.0" /></HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <TextArea fx:id="txtdescribationgame4" prefHeight="100.0" text="Game 4 description..." wrapText="true" />
+                                <ImageView fx:id="imageviewgame4" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                <Button fx:id="btn_Details4" id="btn4" onAction="#onclickbtn_Details" prefWidth="150.0" text="Details" />
+                                <Label fx:id="timeoutgame4" style="-fx-font-family: Consolas;" text="Release in: 1d 10h" textFill="#00ff88" />
+                            </children>
+                        </VBox>
+
+                        <!-- Game 5 -->
+                        <VBox maxWidth="1.7976931348623157E308" prefHeight="350" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1" style="-fx-background-color: #2a2a2a; -fx-background-radius: 10;">
+                            <children>
+                                <HBox prefHeight="40.0">
+                                    <children>
+                                        <Label fx:id="lblGameTitle5" style="-fx-font-weight: bold;" text="Game Title 5" textFill="white">
+                                            <HBox.margin><Insets left="70.0" /></HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <TextArea fx:id="txtdescribationgame5" prefHeight="100.0" text="Game 5 description..." wrapText="true" />
+                                <ImageView fx:id="imageviewgame5" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                <Button fx:id="btn_Details5" id="btn5" onAction="#onclickbtn_Details" prefWidth="150.0" text="Details" />
+                                <Label fx:id="timeoutgame5" style="-fx-font-family: Consolas;" text="Release in: 6d 3h" textFill="#00ff88" />
+                            </children>
+                        </VBox>
+
+                        <!-- Game 6 -->
+                        <VBox maxWidth="1.7976931348623157E308" prefHeight="350" spacing="10" GridPane.columnIndex="2" GridPane.rowIndex="1" style="-fx-background-color: #2a2a2a; -fx-background-radius: 10;">
+                            <children>
+                                <HBox prefHeight="40.0">
+                                    <children>
+                                        <Label fx:id="lblGameTitle6" style="-fx-font-weight: bold;" text="Game Title 6" textFill="white">
+                                            <HBox.margin><Insets left="70.0" /></HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <TextArea fx:id="txtdescribationgame6" prefHeight="100.0" text="Game 6 description..." wrapText="true" />
+                                <ImageView fx:id="imageviewgame6" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                <Button fx:id="btn_Details6" id="btn6" onAction="#onclickbtn_Details" prefWidth="150.0" text="Details" />
+                                <Label fx:id="timeoutgame6" style="-fx-font-family: Consolas;" text="Release in: 9d 15h" textFill="#00ff88" />
+                            </children>
+                        </VBox>
+
+                    </children>
+
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS" percentWidth="33.33" />
+                        <ColumnConstraints hgrow="ALWAYS" percentWidth="33.33" />
+                        <ColumnConstraints hgrow="ALWAYS" percentWidth="33.33" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                    </rowConstraints>
+                </GridPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>
