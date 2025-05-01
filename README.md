@@ -68,3 +68,4 @@ The interface is styled with a modern gamer-friendly look, and multithreading is
 ```bash
 javac GameApp.java
 java GameApp
+thats it . 
